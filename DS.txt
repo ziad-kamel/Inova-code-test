@@ -1,0 +1,42 @@
+// QUEUE //
+
+QUEUE = []
+HEAD = -1
+TAIL = -1
+
+
+
+// for enqueue operation O(1) //
+
+1: 
+IF TAIL = MAX-1
+Write OVERFLOW
+ENDIF
+
+2:
+IF HEAD = -1 and TAIL = -1
+SET HEAD = TAIL = 0
+ELSE 
+SET TAIL = TAIL+1
+ENDIF
+
+3:
+SET QUEUE[TAIL] = NUM
+
+4:
+RETURN
+
+
+
+// for dequeue operation O(1) //
+
+1:
+IF HEAD = -1 or HEAD > TAIL
+Write UNDERFLOW
+ELSE
+SET VALUE = QUEUE[HEAD]
+SET HEAD = HAEAD+1
+ENDIF
+
+2:
+RETURN
