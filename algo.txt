@@ -1,0 +1,12 @@
+//time complexity = O(n) = O(100) {n is the number of nodes in the list = 100}
+//space complexity = O(1)
+
+HEAD = 0
+TAIL = SIZE-1
+
+IF (SIZE%2) != 0:
+HEAD = floor(SIZE/2)
+ELSE:
+HEAD = SIZE/2
+ENDIF
+RETURN LIST(HEAD, TAIL)
